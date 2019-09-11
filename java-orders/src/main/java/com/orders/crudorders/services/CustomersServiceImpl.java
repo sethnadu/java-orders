@@ -1,6 +1,5 @@
 package com.orders.crudorders.services;
 
-import com.orders.crudorders.models.Agents;
 import com.orders.crudorders.models.Customers;
 import com.orders.crudorders.models.Orders;
 import com.orders.crudorders.repos.CustomersRepository;
@@ -30,7 +29,7 @@ public class CustomersServiceImpl implements CustomersService
     @Override
     public Customers findOrdersByCustomerName(String custname)
     {
-        Customers customer = custrepo.findByName(custname);
+        Customers customer = custrepo.findByCustname(custname);
 
         if (customer == null)
         {

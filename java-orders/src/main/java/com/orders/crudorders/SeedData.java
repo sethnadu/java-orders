@@ -6,8 +6,6 @@ import com.orders.crudorders.models.Orders;
 import com.orders.crudorders.repos.AgentsRepository;
 import com.orders.crudorders.repos.CustomersRepository;
 import com.orders.crudorders.repos.OrdersRepository;
-import com.orders.crudorders.services.CustomersService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
@@ -17,7 +15,7 @@ import org.springframework.transaction.annotation.Transactional;
 public class SeedData implements CommandLineRunner
 {
 //    @Autowired
-//    CustomersService customersService;
+
     private CustomersRepository custrepos;
     private AgentsRepository agentrepos;
     private OrdersRepository ordersrepos;
@@ -30,7 +28,7 @@ public class SeedData implements CommandLineRunner
     }
 
     @Override
-    public void run(String... args) throws Exception
+    public void run(String[] args) throws Exception
     {
         Agents a01 = new Agents("Ramasundar", "Bangalore", 0.15, "077-25814763", "");
         Agents a02 = new Agents("Alex ", "London", 0.13, "075-12458969", "");

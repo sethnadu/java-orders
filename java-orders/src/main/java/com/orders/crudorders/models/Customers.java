@@ -29,7 +29,7 @@ public class Customers
 
     @ManyToOne
     @JoinColumn(name = "agentcode", nullable = false)
-    @JsonIgnoreProperties("customers")
+    @JsonIgnoreProperties("agent")
     private Agents agent;
 
     @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL, orphanRemoval = true)
