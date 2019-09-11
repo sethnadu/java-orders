@@ -1,11 +1,11 @@
-package com.lambdaschool.orders;
+package com.orders.crudorders;
 
-import com.lambdaschool.orders.model.Agents;
-import com.lambdaschool.orders.model.Customers;
-import com.lambdaschool.orders.model.Orders;
-import com.lambdaschool.orders.repos.AgentsRepository;
-import com.lambdaschool.orders.repos.CustomersRepository;
-import com.lambdaschool.orders.repos.OrdersRepository;
+import com.orders.crudorders.models.Agents;
+import com.orders.crudorders.models.Customers;
+import com.orders.crudorders.models.Orders;
+import com.orders.crudorders.repos.AgentsRepository;
+import com.orders.crudorders.repos.CustomersRepository;
+import com.orders.crudorders.repos.OrdersRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
