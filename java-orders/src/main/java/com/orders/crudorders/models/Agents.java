@@ -20,9 +20,9 @@ public class Agents
     private String phone;
     private String Country;
 
-    @OneToMany(mappedBy = "agent", cascade = CascadeType.ALL, orphanRemoval = true)
-    @JsonIgnoreProperties("agent")
-    private List<Agents> agent = new ArrayList<>();
+//    @OneToMany(mappedBy = "agent", cascade = CascadeType.ALL, orphanRemoval = true)
+//    @JsonIgnoreProperties("agent")
+//    private List<Agents> agent = new ArrayList<>();
 
     public Agents()
     {
@@ -97,13 +97,13 @@ public class Agents
         Country = country;
     }
 
-    public List<Agents> getAgent()
-    {
-        return agent;
-    }
-
-    public void setAgent(List<Agents> agent)
-    {
-        this.agent = agent;
-    }
+//    public List<Agents> getAgent()
+//    {
+//        return agent;
+//    }
+//
+//    public void setAgent(List<Agents> agent)
+//    {
+//        this.agent = agent;
+//    }
 }
