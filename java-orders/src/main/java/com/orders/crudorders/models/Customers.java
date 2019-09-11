@@ -34,7 +34,7 @@ public class Customers
 
     @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL, orphanRemoval = true)
     @JsonIgnoreProperties("customer")
-    private List<Customers> customers = new ArrayList<>();
+    private List<Orders> orders = new ArrayList<>();
 
     public Customers()
     {
@@ -175,13 +175,13 @@ public class Customers
         this.agent = agent;
     }
 
-    public List<Customers> getCustomers()
+    public List<Orders> getOrders()
     {
-        return customers;
+        return orders;
     }
 
-    public void setCustomers(List<Customers> customers)
+    public void setOrders(List<Orders> orders)
     {
-        this.customers = customers;
+        this.orders = orders;
     }
 }
